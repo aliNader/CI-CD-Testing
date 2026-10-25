@@ -10,8 +10,8 @@ public class LoginPage : BasePage
     public LoginPage(AndroidDriver driver) : base(driver) { }
 
     // Flutter exposes Text widgets and button labels as content-desc -> Accessibility ID.
-    private static By Title        => AppiumBy.AccessibilityId("Welcome Back!");
-    private static By SignInButton => AppiumBy.AccessibilityId("Sign in");
+    private static By Title        => MobileBy.AccessibilityId("Welcome Back!");
+    private static By SignInButton => MobileBy.AccessibilityId("Sign in");
 
     // Text fields have no usable id, so they are found by position.
     private static By UsernameField => By.XPath("(//android.widget.EditText)[1]");
